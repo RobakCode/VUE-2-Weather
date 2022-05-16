@@ -1,4 +1,4 @@
-# wapp
+# WEATHER APP
 
 ## Project setup
 ```
