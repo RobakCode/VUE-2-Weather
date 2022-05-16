@@ -8,7 +8,7 @@ Vue.config.productionTip = false;
 Vue.use(VueI18n);
 
 const i18n = new VueI18n({
-  locale: 'en-US',
+  locale: 'pl-PL',
   messages: {
     'en-US': {
       placeholderSearchCity: 'Search city...',

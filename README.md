@@ -1,5 +1,7 @@
 # WEATHER APP
 
+![](screenshot.png)
+
 ## Project setup
 ```
 yarn install

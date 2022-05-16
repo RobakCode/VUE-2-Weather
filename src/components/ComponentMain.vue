@@ -38,6 +38,7 @@ export default {
 
       const todayDate = getTodayDateString();
       const activeDay = this.weather[todayDate];
+
       if (!this.longTermWeather && activeDay) {
         return Object.values(activeDay).map((item) => ({
           hour: getTimeFromDtTxt(item.dt_txt),
@@ -54,7 +55,7 @@ export default {
           const setNewIcon = !prevDate ? true : prevDate - date > currentDate - date;
 
           return {
-            day: new Date(current.dt).getDay(),
+            day: new Date(current.dt_txt).getDay(),
             minTemp: prev?.minTemp && prev?.minTemp < current?.main?.temp?.toFixed()
               ? prev.minTemp
               : current?.main?.temp?.toFixed(),
@@ -64,7 +65,7 @@ export default {
             icon: setNewIcon ? `/icons/${getIconName(current.weather[0].main || '')}.svg` : `/icons/${getIconName(prev.weather[0].main || '')}.svg`,
             ...current,
           };
-        }), {}) || [];
+        }), {});
 
       return result;
     },

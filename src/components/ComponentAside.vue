@@ -37,25 +37,6 @@ export default {
         ...this.todayWeather,
         icon: `/icons/${getIconName(this.todayWeather.weather[0].main || '')}.svg`,
       };
-
-      // if (!Object.values(this.weather).length) return {};
-      // let result = {};
-      // const date = getTodayDateString();
-      // const activeDay = this.weather[date];
-
-      // if (!activeDay) {
-      //   result = { ...Object.values(Object.values(this.weather)[0])[0] };
-      // } else {
-      //   result = { ...Object.values(activeDay)[0] };
-      // }
-
-      // result = {
-      //   ...result,
-      //   hour: getTimeFromDtTxt(result.dt_txt),
-      //   icon: `/icons/${getIconName(result.weather[0].main || '')}.svg`,
-      // };
-
-      // return { ...result, activeDay };
     },
   },
 };

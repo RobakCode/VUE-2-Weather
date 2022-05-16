@@ -1,6 +1,6 @@
 <template lang="pug">
 .card-items__wrapper
-  div(v-for="item in getItems")
+  div(v-for="item in getItems" v-if="item.icon")
     WeatherCard(
       :day='item.day'
       :icon='item.icon'
@@ -27,40 +27,6 @@ export default {
       return this.items.slice(0, 5);
     },
   },
-  // data() {
-  //   return {
-  //     items: [
-  //       {
-  //         icon: 'cloud_rain',
-  //         day: 1,
-  //       },
-  //       {
-  //         icon: 'cloud',
-  //         day: 2,
-  //       },
-  //       {
-  //         icon: 'sun',
-  //         day: 3,
-  //       },
-  //       {
-  //         icon: 'cloud_rain',
-  //         day: 4,
-  //       },
-  //       {
-  //         icon: 'rain',
-  //         day: 5,
-  //       },
-  //       {
-  //         icon: 'cloud_rain',
-  //         day: 6,
-  //       },
-  //       {
-  //         icon: 'cloud_rain',
-  //         day: 7,
-  //       },
-  //     ],
-  //   };
-  // },
 };
 </script>
 
