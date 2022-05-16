@@ -1,0 +1,40 @@
+<svg id="Rain" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rain_Background_Mask_" data-name="Rain (Background/Mask)" width="24" height="24" fill="none"/>
+    </clipPath>
+  </defs>
+  <style>
+    @keyframes rain_drop_animation {
+      0% {
+        opacity: 0;
+      }
+      50% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+
+    #rain_drop_id_animation_1 {
+      animation: rain_drop_animation 5s infinite ease-in-out;
+    }
+    #rain_drop_id_animation_2 {
+      animation: rain_drop_animation 4s infinite ease-in-out;
+      animation-delay: 2s;
+    }
+    #rain_drop_id_animation_3 {
+      animation: rain_drop_animation 3s infinite ease-in-out;
+      animation-delay: 1s;
+    }
+  </style>
+  <rect id="Rain_Background_Mask_2" data-name="Rain (Background/Mask)" width="24" height="24" fill="none"/>
+  <g id="Rain-2" data-name="Rain" clip-path="url(#clip-path)">
+    <g id="Rain-3" data-name="Rain" transform="translate(2 2)">
+      <path id="rain_drop_id_animation_1" data-name="Ellipse 232" d="M3,10A3,3,0,0,1,0,7C0,5.343,3,0,3,0S6,5.343,6,7A3,3,0,0,1,3,10Z" transform="translate(14 8)" fill="#589afc"/>
+      <path id="rain_drop_id_animation_2" data-name="Ellipse 233" d="M3,10A3,3,0,0,1,0,7C0,5.343,3,0,3,0S6,5.343,6,7A3,3,0,0,1,3,10Z" transform="translate(7)" fill="#589afc"/>
+      <path id="rain_drop_id_animation_3" data-name="Ellipse 234" d="M3,10A3,3,0,0,1,0,7C0,5.343,3,0,3,0S6,5.343,6,7A3,3,0,0,1,3,10Z" transform="translate(0 10)" fill="#589afc"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="56" height="56" viewBox="0 0 56 56">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Weather_Background_Mask_" data-name="Weather (Background/Mask)" width="56" height="56" fill="#fee04d" stroke="#fee04d" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <style>
+    @keyframes sun_animation {
+    0% {
+      transform: scale(100%) translate(0%, 0%);
+    }
+    50% {
+      transform: scale(120%) translate(-5%, -5%);
+    }
+    100% {
+      transform: scale(100%) translate(0%, 0%);
+    }
+  }
+
+  #sun_id_animation {
+    animation: sun_animation 3s infinite ease-in-out;
+  }
+  </style>
+  <g clip-path="url(#clip-path)">
+    <g id="Group_1808" data-name="Group 1808" transform="translate(8 8)">
+      <g id="Sun">
+        <ellipse id="Ellipse_229" data-name="Ellipse 229" cx="13.333" cy="13.425" rx="13.333" ry="13.425" transform="translate(6.667 6.712)" fill="#fee04d" stroke="#fee04d" stroke-width="1"/>
+        <g id="sun_id_animation">
+          <path id="Vector_17" data-name="Vector 17" d="M0,0V40.273" transform="translate(20)" fill="#fee04d" stroke="#fee04d" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke-dasharray="8 8"/>
+          <path id="Vector_20" data-name="Vector 20" d="M0,0V40.137" transform="translate(34.239 5.995) rotate(45.195)" fill="#fee04d" stroke="#fee04d" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke-dasharray="8 8"/>
+          <path id="Vector_19" data-name="Vector 19" d="M0,0V40.137" transform="translate(5.761 5.995) rotate(-45.195)" fill="#fee04d" stroke="#fee04d" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke-dasharray="8 8"/>
+          <path id="Vector_18" data-name="Vector 18" d="M0,0V40" transform="translate(0 20.137) rotate(-90)" fill="#fee04d" stroke="#fee04d" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke-dasharray="8 8"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

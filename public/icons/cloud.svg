@@ -1,0 +1,27 @@
+<svg id="Frame_11" data-name="Frame 11" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Frame_11_Background_Mask_" data-name="Frame 11 (Background/Mask)" width="24" height="24" fill="none"/>
+    </clipPath>
+  </defs>
+  <style>
+    @keyframes clouds_animation {
+      0% {
+        transform: translateX(-7%);
+      }
+      50% {
+        transform: translateX(7%);
+      }
+      100% {
+        transform: translateX(-7%);
+      }
+    }
+    #clouds_id_animation {
+      animation: clouds_animation 5s infinite ease-in-out;
+    }
+  </style>
+  <rect id="Frame_11_Background_Mask_2" data-name="Frame 11 (Background/Mask)" width="24" height="24" fill="none"/>
+  <g id="clouds_id_animation" data-name="Frame 11" clip-path="url(#clip-path)">
+    <path id="Vector_16" data-name="Vector 16" d="M2.633,12H18.143c2.2-.4,3.16-6.247-1.222-7.139-.431-1.958-2.186-4-5.7-2.231C9.909-1.832,2.286-.5,2.9,5.753-.694,5.8-1.133,11.638,2.633,12Z" transform="translate(2 6)" fill="#96d6f9"/>
+  </g>
+</svg>

@@ -1,0 +1,54 @@
+<svg id="Weather" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="56" height="56" viewBox="0 0 56 56">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Weather_Background_Mask_" data-name="Weather (Background/Mask)" width="56" height="56" fill="none"/>
+    </clipPath>
+  </defs>
+  <style>
+  @keyframes clouds_animation {
+    0% {
+      opacity: 0.7;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0.7;
+    }
+  }
+  #clouds_id_animation {
+    animation: clouds_animation 5s infinite ease-in-out;
+  }
+
+  @keyframes sun_animation {
+    0% {
+      transform: translate(-5%, -5%);
+    }
+    50% {
+      transform: translate(30%, 5%);
+    }
+    100% {
+      transform: translate(-5%, -5%);
+    }
+  }
+
+  #sun_id_animation {
+    animation: sun_animation 8s infinite ease-in-out;
+  }
+  </style>
+  <rect id="Weather_Background_Mask_2" data-name="Weather (Background/Mask)" width="56" height="56" fill="none"/>
+  <g id="Weather-2" data-name="Weather" clip-path="url(#clip-path)">
+    <g id="Group_1808" data-name="Group 1808" transform="translate(8 11)">
+      <g id="sun_id_animation" transform="translate(14.737)">
+        <ellipse id="Ellipse_229" data-name="Ellipse 229" cx="8.421" cy="8.479" rx="8.421" ry="8.479" transform="translate(4.21 4.239)" fill="#fee04d" stroke="#fee04d" stroke-width="1"/>
+        <g id="Light">
+          <path id="Vector_17" data-name="Vector 17" d="M0,0V25.436" transform="translate(12.632)" fill="#fee04d" stroke="#fee04d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" stroke-dasharray="4 4"/>
+          <path id="Vector_20" data-name="Vector 20" d="M0,0V25.35" transform="translate(21.624 3.786) rotate(45.195)" fill="#fee04d" stroke="#fee04d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" stroke-dasharray="4 4"/>
+          <path id="Vector_19" data-name="Vector 19" d="M0,0V25.35" transform="translate(3.639 3.786) rotate(-45.195)" fill="#fee04d" stroke="#fee04d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" stroke-dasharray="4 4"/>
+          <path id="Vector_18" data-name="Vector 18" d="M0,0V25.263" transform="translate(0 12.718) rotate(-90)" fill="#fee04d" stroke="#fee04d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" stroke-dasharray="4 4"/>
+        </g>
+      </g>
+      <path id="clouds_id_animation" data-name="Vector 16" d="M5.267,25.436H36.286c4.395-.846,6.32-13.24-2.444-15.132-.862-4.15-4.372-8.487-11.393-4.729C19.819-3.882,4.572-1.067,5.8,12.2-1.388,12.295-2.266,24.669,5.267,25.436Z" transform="translate(0 8.479)" fill="#96d6f9"/>
+    </g>
+  </g>
+</svg>

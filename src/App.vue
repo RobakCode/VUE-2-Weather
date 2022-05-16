@@ -1,27 +1,24 @@
-<template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+<template lang="pug">
+LayoutDefault()
+  ComponentAside(slot="aside")
+  ComponentMain()
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue';
+import LayoutDefault from '@/layouts/Default.vue';
+import ComponentAside from '@/components/ComponentAside.vue';
+import ComponentMain from '@/components/ComponentMain.vue';
 
 export default {
-  name: 'App',
+  name: 'Weather-app',
   components: {
-    HelloWorld,
+    LayoutDefault,
+    ComponentAside,
+    ComponentMain,
   },
 };
 </script>
 
 <style lang="stylus">
-#app
-  font-family Avenir, Helvetica, Arial, sans-serif
-  -webkit-font-smoothing antialiased
-  -moz-osx-font-smoothing grayscale
-  text-align center
-  color #2c3e50
-  margin-top 60px
+@import '@/theme/base.styl'
 </style>

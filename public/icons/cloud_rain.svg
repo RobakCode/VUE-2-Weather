@@ -1,0 +1,56 @@
+<svg id="Weather" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 56 56">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Weather_Background_Mask_" data-name="Weather (Background/Mask)" width="56" height="56" fill="none"/>
+    </clipPath>
+  </defs>
+  <style>
+  @keyframes clouds_animation {
+    0% {
+      transform: translateX(-10%);
+    }
+    50% {
+      transform: translateX(10%);
+    }
+    100% {
+      transform: translateX(-10%);
+    }
+  }
+  #clouds_id_animation {
+    animation: clouds_animation 5s infinite ease-in-out;
+  }
+
+  @keyframes rain_drop_animation {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+  #rain_drop_id_animation_1 {
+    animation: rain_drop_animation 5s infinite ease-in-out;
+  }
+  #rain_drop_id_animation_2 {
+    animation: rain_drop_animation 4s infinite ease-in-out;
+    animation-delay: 2s;
+  }
+  #rain_drop_id_animation_3 {
+    animation: rain_drop_animation 3s infinite ease-in-out;
+    animation-delay: 1s;
+  }
+  </style>
+  <rect id="Weather_Background_Mask_2" data-name="Weather (Background/Mask)" width="56" height="56" fill="none"/>
+  <g id="Weather-2" data-name="Weather" clip-path="url(#clip-path)">
+    <g id="Group_1812" data-name="Group 1812" transform="translate(8 12)">
+      <path id="clouds_id_animation" data-name="Vector 16" d="M5.267,25.436H36.286c4.395-.846,6.32-13.24-2.444-15.132-.862-4.15-4.372-8.487-11.393-4.729C19.819-3.882,4.572-1.067,5.8,12.2-1.388,12.295-2.266,24.669,5.267,25.436Z" fill="#96d6f9"/>
+      <path id="rain_drop_id_animation_1" data-name="Ellipse 232" d="M3.158,10.6A3.169,3.169,0,0,1,0,7.419C0,5.663,3.158,0,3.158,0S6.316,5.663,6.316,7.419A3.169,3.169,0,0,1,3.158,10.6Z" transform="translate(24.21 20.137)" fill="#589afc"/>
+      <path id="rain_drop_id_animation_2" data-name="Ellipse 233" d="M3.158,10.6A3.169,3.169,0,0,1,0,7.419C0,5.663,3.158,0,3.158,0S6.316,5.663,6.316,7.419A3.169,3.169,0,0,1,3.158,10.6Z" transform="translate(16.842 11.658)" fill="#589afc"/>
+      <path id="rain_drop_id_animation_3" data-name="Ellipse 234" d="M3.158,10.6A3.169,3.169,0,0,1,0,7.419C0,5.663,3.158,0,3.158,0S6.316,5.663,6.316,7.419A3.169,3.169,0,0,1,3.158,10.6Z" transform="translate(9.474 22.256)" fill="#589afc"/>
+    </g>
+  </g>
+</svg>

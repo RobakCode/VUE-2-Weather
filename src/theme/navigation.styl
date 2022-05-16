@@ -1,0 +1,42 @@
+@import './variables.styl'
+
+.main-navigation
+  display: flex
+  align-items: center
+  justify-content: space-between
+  height: 48px
+  margin-bottom: 24px
+
+  &__item
+    margin-right: 16px
+
+    &:last-of-type
+      margin-right: 0px
+
+  & > div
+    display: flex
+
+button
+  font-size: 20px
+  color: $lead-color
+  font-family: $primary-font
+  font-weight: 400
+  background: transparent
+  border: none
+  cursor: pointer
+
+  &.active
+    color: $dark-blue
+
+  &.icon
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 32px
+    height: 32px
+    background: $lead-color
+    border: none
+    border-radius: 50%
+
+    &.active
+      background: $dark-blue

@@ -1,0 +1,25 @@
+<svg id="Cloud" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 256 256">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Cloud_Background_Mask_" data-name="Cloud (Background/Mask)" width="256" height="256" fill="none"/>
+    </clipPath>
+  </defs>
+  <rect id="Cloud_Background_Mask_2" data-name="Cloud (Background/Mask)" width="256" height="256" fill="none"/>
+  <g id="Cloud-2" data-name="Cloud" clip-path="url(#clip-path)">
+    <g id="Cloud-3" data-name="Cloud" transform="translate(8 4)">
+      <g id="Sun" transform="translate(88.421)">
+        <ellipse id="Ellipse_229" data-name="Ellipse 229" cx="50.526" cy="50.872" rx="50.526" ry="50.872" transform="translate(25.263 25.436)" fill="#fee04d"/>
+        <g id="Light">
+          <path id="Vector_17" data-name="Vector 17" d="M0,0V152.615" transform="translate(75.789)" fill="#fee04d" stroke="#fee04d" stroke-linecap="round" stroke-linejoin="round" stroke-width="6" stroke-dasharray="24 24"/>
+          <path id="Vector_20" data-name="Vector 20" d="M0,0V152.1" transform="translate(129.747 22.716) rotate(45.195)" fill="#fee04d" stroke="#fee04d" stroke-linecap="round" stroke-linejoin="round" stroke-width="6" stroke-dasharray="24 24"/>
+          <path id="Vector_19" data-name="Vector 19" d="M0,0V152.1" transform="translate(21.832 22.716) rotate(-45.195)" fill="#fee04d" stroke="#fee04d" stroke-linecap="round" stroke-linejoin="round" stroke-width="6" stroke-dasharray="24 24"/>
+          <path id="Vector_18" data-name="Vector 18" d="M0,0V151.579" transform="translate(0 76.308) rotate(-90)" fill="#fee04d" stroke="#fee04d" stroke-linecap="round" stroke-linejoin="round" stroke-width="6" stroke-dasharray="24 24"/>
+        </g>
+      </g>
+      <path id="Vector_16" data-name="Vector 16" d="M31.6,152.615H217.713c30.287-3.487,37.92-79.443-14.665-90.792-5.17-24.9-26.232-50.922-68.361-28.373C118.912-23.294,27.433-6.4,34.774,73.173-8.328,73.768-13.6,148.013,31.6,152.615Z" transform="translate(0 50.872)" fill="#96d6f9"/>
+      <path id="Ellipse_232" data-name="Ellipse 232" d="M18.947,63.59A19.012,19.012,0,0,1,0,44.513C0,33.977,18.947,0,18.947,0S37.895,33.977,37.895,44.513A19.012,19.012,0,0,1,18.947,63.59Z" transform="translate(145.263 171.692)" fill="#589afc"/>
+      <path id="Ellipse_233" data-name="Ellipse 233" d="M18.947,63.59A19.012,19.012,0,0,1,0,44.513C0,33.977,18.947,0,18.947,0S37.895,33.977,37.895,44.513A19.012,19.012,0,0,1,18.947,63.59Z" transform="translate(101.053 120.821)" fill="#589afc"/>
+      <path id="Ellipse_234" data-name="Ellipse 234" d="M18.947,63.59A19.012,19.012,0,0,1,0,44.513C0,33.977,18.947,0,18.947,0S37.895,33.977,37.895,44.513A19.012,19.012,0,0,1,18.947,63.59Z" transform="translate(56.842 184.41)" fill="#589afc"/>
+    </g>
+  </g>
+</svg>
