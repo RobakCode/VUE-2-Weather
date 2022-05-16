@@ -1,8 +1,10 @@
 <template lang="pug">
 .main
   MainNavigation
-  template(v-if="weatherCardItems.length")
+  template(v-if="weatherCardItems.length && longTermWeather")
     WeatherCardItems(:items="weatherCardItems")
+  template(v-if="!longTermWeather && weatherTodayCardItems.length")
+    WeatherCardItems(:items="weatherTodayCardItems")
   div(v-if="searchParams.name && todayWeather.main")
     .information-card__title
       h2.title {{$t('additionaInformation')}} {{$t(`day.${new Date(todayWeather.dt).getDay()}`)}}
@@ -36,17 +38,6 @@ export default {
     weatherCardItems() {
       if (!Object.values(this.weather).length) return {};
 
-      const todayDate = getTodayDateString();
-      const activeDay = this.weather[todayDate];
-
-      if (!this.longTermWeather && activeDay) {
-        return Object.values(activeDay).map((item) => ({
-          hour: getTimeFromDtTxt(item.dt_txt),
-          icon: `/icons/${getIconName(item.weather[0].main || '')}.svg`,
-          temp: item.main.temp.toFixed(),
-        }));
-      }
-
       const result = Object.values(this.weather)
         .map((day) => Object.values(day).reduce((prev, current) => {
           const date = new Date().getHours();
@@ -55,7 +46,7 @@ export default {
           const setNewIcon = !prevDate ? true : prevDate - date > currentDate - date;
 
           return {
-            day: new Date(current.dt_txt).getDay(),
+            title: this.$t(`day.${new Date(current.dt_txt.split(' ')[0]).getDay()}`),
             minTemp: prev?.minTemp && prev?.minTemp < current?.main?.temp?.toFixed()
               ? prev.minTemp
               : current?.main?.temp?.toFixed(),
@@ -68,6 +59,22 @@ export default {
         }), {});
 
       return result;
+    },
+    weatherTodayCardItems() {
+      if (!Object.values(this.weather).length) return {};
+
+      const todayDate = getTodayDateString();
+      const activeDay = this.weather[todayDate];
+
+      if (!this.longTermWeather && activeDay) {
+        return Object.values(activeDay).map((item) => ({
+          title: getTimeFromDtTxt(item.dt_txt),
+          icon: `/icons/${getIconName(item.weather[0].main || '')}.svg`,
+          temp: item.main.temp.toFixed(),
+        }));
+      }
+
+      return {};
     },
     informationCardItem() {
       if (!this.todayWeather.main) return null;
@@ -85,6 +92,9 @@ export default {
   mounted() {
     this.loadCityList();
   },
+  update() {
+    console.log('longTermWeather', this.longTermWeather);
+  },
   methods: {
     ...mapActions(['getWeather', 'loadCityList']),
   },
@@ -100,7 +110,7 @@ export default {
 .information-card
   &__wrapper
     display: grid
-    grid-template-columns: repeat(2, 1fr)
+    grid-template-columns: repeat(1, 1fr)
     gap: 24px
     width: 100%
 

@@ -59,6 +59,7 @@ export default {
     position: absolute
     top: 120%
     left: 0
+    z-index: 9999
 
   &__item
     font-family: $font-primary

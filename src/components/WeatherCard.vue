@@ -1,6 +1,6 @@
 <template lang="pug">
 .card-item
-  .card-item__name {{hour || $t(`day.${day}`)}}
+  .card-item__name {{title}}
   .card-item__weather
     img(:src='icon')
   .card-item__temperature
@@ -14,8 +14,7 @@
 export default {
   name: 'WeatherCard',
   props: {
-    day: Number,
-    hour: String,
+    title: String,
     icon: String,
     minTemp: String,
     maxTemp: String,

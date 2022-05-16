@@ -2,12 +2,11 @@
 .card-items__wrapper
   div(v-for="item in getItems" v-if="item.icon")
     WeatherCard(
-      :day='item.day'
+      :title='item.title'
       :icon='item.icon'
       :minTemp='item.minTemp'
       :maxTemp='item.maxTemp'
       :temp='item.temp'
-      :hour='item.hour'
     )
 </template>
 
